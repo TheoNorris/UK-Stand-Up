@@ -7,14 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>UK Stand Up</title>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script
+
+<script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
@@ -24,7 +18,14 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-  </head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    </head>
 
   <body>
     <h1>UK STAND UP</h1>
@@ -33,7 +34,7 @@
     <h1 class="artist-name"></h1>
     <p artist-description></p>
     </div>
-    <select name="Artist" id="artists" oninput="getArtist()">
+    <select name="Artist" id="artists" onclick="getArtist()">
   <option value="Stormzy">Stormzy</option>
   <option value="Ocean Wisdom">Ocean Wisdom</option>
   <option value="Kojey Radical">Kojey Radical</option>
@@ -46,30 +47,44 @@
 
 const api_url = "https://api.spotify.com/v1/search?q=stormzy&type=artist" 
 
-async function artist() {
-    
-    var artist = $('#artists').val();
-    
+function artistImageHTML(id_artist){
+    return `<img src="${id_artist.result.cover}">`
 }
 
+function getArtist(event) {
+    
+    var artistValue = $('#artists').val();
+    
+}   
+
 $.when(
-    $.getJSON(`https://api.spotify.com/v1/search?q=${artist}`)
-).then(
+    $.getJSON(`https://api.happi.dev/v1/music/artists/23636?apikey=014a1a2mKrOybg41LnU3DQB8IJhBQS29KaeVLZdEB6UI5DUHzx3qlyls
+`)).then(
     function(response) {
-        var artistImage = response;
-        $('#artist-image').html(artistImageHTML(artistImage));
+        var artistMeta = response;
+       
+       $("#artist-image").html(artistImageHTML(artistMeta));
     }, function(errorResponse) {
-        if (errorResponse.stratus === 404) {
-            $(`#artist-image').html(`<h2>No image found for ${artist}</h2>`)
+        if (errorResponse.status === 404) {
+            $('#artist-image').html(`<h2>No image found for ${artist}</h2>`)
         } else{
             console.log(errorResponse);
-            $(`#artist-image').html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
+            $('#artist-image').html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
         }
+    console.log(artistImage)
     });
 
 
 </script>
-
-
+<script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
