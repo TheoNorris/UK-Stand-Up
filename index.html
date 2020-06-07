@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>UK Stand Up</title>
 
-
-<script
+    <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
@@ -18,6 +17,15 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -25,66 +33,37 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    </head>
+  </head>
 
   <body>
-    <h1>UK STAND UP</h1>
-    <div class="container-fluid" id="artist-image"></div>
-    <div class="container artist-info">
-    <h1 class="artist-name"></h1>
-    <p artist-description></p>
+    <div class="container-fluid">
+      <h1>UK STAND UP</h1>
+      <div class="row">
+        <div class="container container-fluid col-4">
+          <select name="Artist" id="artists" onchange="getArtist()">
+            <option value="Select Artist" selected="selected">Select Artist</option>
+            <option value="Kano">Kano</option>
+            <option value="Wretch 32">Wretch 32</option>
+            <option value="Kojey Radical">Kojey Radical</option>
+            <option value="Klashnekoff">Klashnekoff</option>
+            <option value="Coops">Coops</option>
+          </select>
+          <p artist-description></p>
+        </div>
+        <div class="container container-fluid col-8">
+          <div id="artist-information">
+            <div id="artist-image-div">
+              <h2 id="artist-name"></h2>
+              <img id="artist-image" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <select name="Artist" id="artists" onclick="getArtist()">
-  <option value="Stormzy">Stormzy</option>
-  <option value="Ocean Wisdom">Ocean Wisdom</option>
-  <option value="Kojey Radical">Kojey Radical</option>
-  <option value="Jam Baxter">Jam Baxter</option>
-  <option value="Giggs">Giggs</option>
-  <option value="Coops">Coops</option>
-</select>
-<script>
-
-
-const api_url = "https://api.spotify.com/v1/search?q=stormzy&type=artist" 
-
-function artistImageHTML(id_artist){
-    return `<img src="${id_artist.result.cover}">`
-}
-
-function getArtist(event) {
-    
-    var artistValue = $('#artists').val();
-    
-}   
-
-$.when(
-    $.getJSON(`https://api.happi.dev/v1/music/artists/23636?apikey=014a1a2mKrOybg41LnU3DQB8IJhBQS29KaeVLZdEB6UI5DUHzx3qlyls
-`)).then(
-    function(response) {
-        var artistMeta = response;
-       
-       $("#artist-image").html(artistImageHTML(artistMeta));
-    }, function(errorResponse) {
-        if (errorResponse.status === 404) {
-            $('#artist-image').html(`<h2>No image found for ${artist}</h2>`)
-        } else{
-            console.log(errorResponse);
-            $('#artist-image').html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
-        }
-    console.log(artistImage)
-    });
-
-
-</script>
-<script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-</body>
+    <footer>
+      <a id="instagram" href="" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a id="facebook" href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a id="spotify" href="" target="_blank"><i class="fab fa-spotify"></i></a>
+    </footer>
+  </body>
 </html>
