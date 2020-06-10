@@ -21,43 +21,47 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="container-fluid">
-      <h1>UK STAND UP</h1>
-      <div class="row">
-        <div class="container container-fluid col-4">
+    <div class="container-fluid general-container">
+      <h1 class="page-heading">UK STAND UP</h1>
+<p class="heading-paragraph">Your favourite UK rappers under one roof</p>
+      <div class="row artist-image-bio">
+        <div class="container container-fluid col-6 artist-bio-div">
           <select name="Artist" id="artists" onchange="getArtist()">
-            <option value="Select Artist" selected="selected"
+            <option id="select-artist" value="Select Artist" selected disabled hidden
               >Select Artist</option
             >
-            <option value="Kano">Kano</option>
-            <option value="Wretch 32">Wretch 32</option>
+            <option value="AJ Tracey">AJ Tracey</option>
+            <option value="Dream Mclean">Dream Mclean</option>
             <option value="Kojey Radical">Kojey Radical</option>
             <option value="Klashnekoff">Klashnekoff</option>
-            <option value="Coops">Coops</option>
+            <option value="Knucks">Knucks</option>
           </select>
           <div id="artist-description container-fluid">
-            <p id="artist-description-p">jxjjx</p>
+            <p id="artist-description-p">UK STAND UP is a space dedicated to celebrating UK Rap artists from around the country. UK RAP is a genre of music, 
+            and a culture that covers a variety of styles of hip hop music made in the United Kingdom. 
+            British hip hop was originally influenced by the dub/toasting introduced to the United Kingdom by Jamaican migrants in the 1950s–70s,
+            who eventually developed uniquely influenced rapping (or speed-toasting) in order to match the rhythm of the ever-increasing pace and aggression of Jamaican-influenced dub in the UK. 
+            Toasting and soundsystem culture was also influential in genres outside of hip hop that still included rapping – such as grime, jungle, and UK garage.
+            Here you will find biographies, social media links, album art and album links to some of the UK's greatest rappers.</p>
           </div>
-        </div>
-        <div class="container container-fluid col-8">
-          <div id="artist-information">
-            <div id="artist-image-div">
-              <h2 id="artist-name"></h2>
-              <img id="artist-image" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="album-images">
+<div id="album-images">
       <a href="" target_blank><img src="" alt="" class="album-img"></a>
       <img src="" alt="" class="#album-img-1">  
       <img src="" alt="" class="#album-img-2">
       <img src="" alt="" class="#album-img-3">
       <img src="" alt="" class="#album-img-4">
       <img src="" alt="" class="#album-img-5">
+      </div>
+        </div>
+        <div class="container container-fluid col-6">
+          <div id="artist-image-div">
+        <!--   <h2 id="artist-name"></h2> -->
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -68,6 +72,8 @@
         ><i class="fab fa-facebook-square"></i
       ></a>
       <a id="spotify" href="" target="_blank"><i class="fab fa-spotify"></i></a>
+      <a id="twitter" href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a id="youtube" href="" target="_blank"><i class="fab fa-youtube-square"></i></a>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
