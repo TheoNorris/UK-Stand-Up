@@ -4,15 +4,19 @@
 * {
 padding: 0;
 margin: 0;
-background-color: black;
 color: white;
+background-color: black;
 }
 
-.col-6.artist-bio-div {
+body{
+background-color: black;
+
+}
+
+.artist-bio-div {
 border: solid 1px #585858;
 padding: 20px 15px;
 max-width: 45%;
-margin-left: 20px;
 }
 
 #artists{
@@ -28,6 +32,14 @@ font-family: Orbitron;
     font-size: 40px;
     font-family: 'Orbitron';
     letter-spacing: 2px;
+}
+
+.artist-image-bio{
+    margin-left: 30px;
+}
+
+.artist-bio-div{
+    text-align: center;
 }
 
 #artist-description-p {
@@ -51,7 +63,7 @@ font-family: Orbitron;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 500px;
+  width: 450px;
   height: 650px;
   position: relative;
   margin: 0 auto;
@@ -72,6 +84,15 @@ margin-top: 30px;
 margin-bottom: 0;
 
 }
+
+.home-header:hover{
+text-decoration: none;
+}
+
+.page-heading:hover{
+color: #ff58ac;
+}
+
 .heading-paragraph{
 font-family: 'Orbitron', sans-serif;
 font-size: 16px;

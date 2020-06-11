@@ -10,14 +10,15 @@ $("#twitter").attr("href", "https://www.twitter.com/" + id_artist.result.twitter
 $("#youtube").attr("href", "https://open.youtube.com/search/" + id_artist.result.youtube); 
 }
 
-
-
-
 function artistDescriptionHTML(artist){
 
-return $("#artist-description-p").html(artist.artist.bio.summary);
+return $("#artist-description-p").html(artist.artist.bio.summary),
+
+$("#artist-description-p").children().attr("target", "_blank");
 
 }
+
+$("p#artist-description-p").children().attr("target", "_blank");
 
 function artistAlbumHTML(id_artist){
 
@@ -45,7 +46,6 @@ document.getElementById("album-images").innerHTML = albumArtToImg;
 
 function getArtist() {
 
-
 var artistBio = $("#artists option:selected").val(),
     artistValue = $("#artists option:selected").val(); 
 
@@ -57,8 +57,8 @@ if (artistValue === "AJ Tracey") {
   artistValue = "23636";
 } else if (artistValue === "Klashnekoff") {
   artistValue = "106201"; 
-} else if (artistValue === "Knucks") {
-  artistValue = "81352"; 
+} else if (artistValue === "Bonkaz") {
+  artistValue = "226544"; 
 } else {
     return;
 }
