@@ -1,8 +1,8 @@
-
 function artistInformationHTML(id_artist) {
 
 return $("#artist-name").html(id_artist.result.artist),
-$("#artist-image-div").css("background", `url(${id_artist.result.cover}) no-repeat center center`),
+$("#artist-image-div").css({"background": `url(${id_artist.result.cover}) no-repeat center center`, "zoom": "130%", "min-height": "600px"}),
+$("#mobile-artist-image-div").css({"background": `url(${id_artist.result.cover}) no-repeat center center`, "zoom": "90%", "min-height": "300px"}),
 $("#facebook").attr("href", "https://www.facebook.com/" + id_artist.result.facebook),
 $("#instagram").attr("href", "https://www.instagram.com/" + id_artist.result.instagram),
 $("#spotify").attr("href", "https://open.spotify.com/search/" + id_artist.result.artist), 
@@ -10,11 +10,13 @@ $("#twitter").attr("href", "https://www.twitter.com/" + id_artist.result.twitter
 $("#youtube").attr("href", "https://open.youtube.com/search/" + id_artist.result.youtube); 
 }
 
+
+
 function artistDescriptionHTML(artist){
 
 return $("#artist-description-p").html(artist.artist.bio.summary),
 
-$("#artist-description-p").children().attr("target", "_blank");
+$("#artist-description-p").children().css("color", "#3f83ff").attr("target", "_blank");
 
 }
 
@@ -40,7 +42,11 @@ individualAlbumArt += `<a class="album-links" href="https://open.spotify.com/sea
 
 var albumArtToImg = individualAlbumArt.replace("undefined", "");}
 
-document.getElementById("album-images").innerHTML = albumArtToImg;
+document.getElementById("album-images").innerHTML = albumArtToImg; {
+    if (true) {
+        $('#album-images').wrap('<div class="album-images-container"></div>');
+    }
+}
 };
 };
 

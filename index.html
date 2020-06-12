@@ -28,17 +28,18 @@
   </head>
 
   <body>
-    <div class="container">
-      <a href="index.html" class="home-header"><h1 class="page-heading">UK STAND UP</h1></a> 
+    <header>
+      <a href="index.html" class="home-header"
+        ><h1 class="page-heading">UK STAND UP</h1></a
+      >
       <p class="heading-paragraph">Your favourite UK rappers under one roof</p>
-      <hr id="heading-divider">
-    </div>
-
-      <div class="row artist-image-bio container-fluid">
-        <div class="container container-fluid col-lg artist-bio-div">
-          
+      <hr id="heading-divider" />
+    </header>
+    <div class="container-fluid">
+      <div class="row artist-image-bio">
+        <div class="col-lg-6 artist-bio-div">
           <div id="artist-description container-fluid">
-           <h2 id="artist-name">UK Rap</h2>
+            <h2 id="artist-name">UK Rap</h2>
             <p id="artist-description-p">
               UK STAND UP is a space dedicated to celebrating UK Rap artists
               from around the country. UK RAP is a genre of music, and a culture
@@ -50,44 +51,50 @@
               ever-increasing pace and aggression of Jamaican-influenced dub in
               the UK. Toasting and soundsystem culture was also influential in
               genres outside of hip hop that still included rapping. such as
-              grime, jungle, and UK garage. A new generation of artists emerged following the turn of the century,
-               including Jehst, Skinnyman, Nicky Spesh, Foreign Beggars and Usmaan. At the same time, 
-               a new style of electronic music emerged in the early 2000s, derivative of UK Garage and jungle, 
-               with influences from Dancehall, Drum and bass and hip hop. The new genre was dubbed grime 
-               (sometimes called eskibeat or sublow) and effectively superseded UK hip hop in both popularity and the mainstream conscious. 
-               Notable grime acts include Dizzee Rascal, Wiley, Kano, Lethal Bizzle, Tinchy Stryder, Skepta, Jme, Jammer, Shystie, Ghetts and Devlin. 
-                Grime is generally considered to be distinct from hip-hop due to its roots primarily being genres such as UK garage and jungle.
-               On this website, you will find biographies,
-              social media links, album art and album links to some of the UK's
-              greatest rappers.
+              grime, jungle, and UK garage. A new generation of artists emerged
+              following the turn of the century, including Jehst, Skinnyman,
+              Nicky Spesh, Foreign Beggars and Usmaan. At the same time, a new
+              style of electronic music emerged in the early 2000s, derivative
+              of UK Garage and jungle, with influences from Dancehall, Drum and
+              bass and hip hop. The new genre was dubbed grime (sometimes called
+              eskibeat or sublow) and effectively superseded UK hip hop in both
+              popularity and the mainstream conscious. Notable grime acts
+              include Dizzee Rascal, Wiley, Kano, Lethal Bizzle, Tinchy Stryder,
+              Skepta, Jme, Jammer, Shystie, Ghetts and Devlin. Grime is
+              generally considered to be distinct from hip-hop due to its roots
+              primarily being genres such as UK garage and jungle. On this
+              website, you will find biographies, social media links, album art
+              and album links to some of the UK's greatest rappers.
             </p>
             <select name="Artist" id="artists" onchange="getArtist()">
-            <option
-              id="select-artist"
-              value="Select Artist"
-              selected
-              disabled
-              hidden
-              >Select Artist</option
-            >
-            <option value="AJ Tracey">AJ Tracey</option>
-            <option value="Dream Mclean">Dream Mclean</option>
-            <option value="Kojey Radical">Kojey Radical</option>
-            <option value="Klashnekoff">Klashnekoff</option>
-            <option value="Bonkaz">Bonkaz</option>
-          </select>
+              <option
+                id="select-artist"
+                value="Select Artist"
+                selected
+                disabled
+                hidden
+                >Select Artist</option
+              >
+              <option value="AJ Tracey">AJ Tracey</option>
+              <option value="Dream Mclean">Dream Mclean</option>
+              <option value="Kojey Radical">Kojey Radical</option>
+              <option value="Klashnekoff">Klashnekoff</option>
+              <option value="Bonkaz">Bonkaz</option>
+            </select>
           </div>
+
           <div id="album-images-container">
-          <div id="album-images">
-          </div>
+            <div id="album-images">
+            </div>
           </div>
         </div>
-        <div class="container container-fluid col-lg">
-          <div id="artist-image-div">
-          </div>
+        <div class="col-lg-6 artist-image-container">
+          <div id="artist-image-div"></div>
+          <div id="mobile-artist-image-div"></div>
+
         </div>
       </div>
-    
+    </div>
     <footer>
       <a id="instagram" href="" target="_blank"
         ><i class="fab fa-instagram"></i
