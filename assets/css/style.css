@@ -15,6 +15,10 @@ body {
   width: 100%;
 }
 
+p{
+    margin: 0;
+}
+
 /*-------------Header*/
 
 .page-heading {
@@ -81,6 +85,7 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
   margin-top: 20px;
+  margin-bottom: 16px;
   font-size: 20px;
   font-weight: 200;
   color: white;
@@ -176,6 +181,28 @@ i:hover{
 color: #3f83ff;
 }
 
+/*-------------footer*/
+
+#footer {
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 1px;
+   font-weight: 100;
+   font-size: 12px;
+   margin-top: 20px;
+}
+
+.theo-tag{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    color: #ff58ac;
+}
+
+.theo-tag:hover{
+    text-decoration: none;
+    color: #3f83ff;
+}
+
 /*-------------Media Queries*/
 
 @media (min-width: 1024px) {
@@ -195,4 +222,15 @@ color: #3f83ff;
       margin: 20px auto;
       left: 0;
   }
+  #heading-divider {
+  margin-bottom: 20px;
+  }
+  #artist-description-p{
+      font-size: 18px;
+  }
+  #footer {
+  font-size: 10px;
 }
+}
+
+
