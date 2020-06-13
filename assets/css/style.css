@@ -15,8 +15,8 @@ body {
   width: 100%;
 }
 
-p{
-    margin: 0;
+p {
+  margin: 0;
 }
 
 /*-------------Header*/
@@ -52,7 +52,6 @@ p{
   border: solid 0.5px#ff58ac;
   margin: 0 auto 50px;
 }
-
 
 /*-------------Artist Bio*/
 
@@ -146,61 +145,60 @@ p{
 /*-------------Artist and city Image*/
 
 .social-div {
-    
-    margin: 20px auto;
-    width: 300px;
-    text-align: center;
-    border: solid .5px #585858;
+  margin: 20px auto;
+  width: 320px;
+  text-align: center;
+  border: solid 0.5px #585858;
 }
 
-#artist-social{
-font-size: 30px;
-    font-family: "Orbitron";
-    margin-top: 15px;
-    letter-spacing: 2px;
+#artist-social {
+  font-size: 30px;
+  font-family: "Orbitron";
+  margin-top: 15px;
+  letter-spacing: 2px;
 }
 
-.social-links{
-padding: 0 3px;
+.social-links {
+  padding: 0 3px;
 }
 
-.social-media-container{
-padding: 5px;
-    border: solid .5px #ff58ac;
-    width: 250px;
-    margin: 0 auto 10px;
+.social-media-container {
+  padding: 5px;
+  border: solid 0.5px #ff58ac;
+  width: 250px;
+  margin: 0 auto 10px;
 }
 
-i{
-font-size: 30px;
-color: white;
-letter-spacing: 2px;
+i {
+  font-size: 30px;
+  color: white;
+  letter-spacing: 2px;
 }
 
-i:hover{
-color: #3f83ff;
+i:hover {
+  color: #3f83ff;
 }
 
 /*-------------footer*/
 
 #footer {
-   text-align: center;
-   font-family: 'Roboto', sans-serif;
-   letter-spacing: 1px;
-   font-weight: 100;
-   font-size: 12px;
-   margin-top: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 12px;
+  margin-top: 20px;
 }
 
-.theo-tag{
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 1px;
-    color: #ff58ac;
+.theo-tag {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+  color: #ff58ac;
 }
 
-.theo-tag:hover{
-    text-decoration: none;
-    color: #3f83ff;
+.theo-tag:hover {
+  text-decoration: none;
+  color: #3f83ff;
 }
 
 /*-------------Media Queries*/
@@ -218,19 +216,19 @@ color: #3f83ff;
   .artist-image-container {
     min-height: 400px;
   }
-  #mobile-artist-image-div{
-      margin: 20px auto;
-      left: 0;
+  #mobile-artist-image-div {
+    margin: 20px auto;
+    left: 0;
   }
   #heading-divider {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   }
-  #artist-description-p{
-      font-size: 18px;
+  #artist-description-p {
+    font-size: 18px;
+    font-weight: 300;
   }
   #footer {
-  font-size: 10px;
+    font-size: 1%;
+    margin-bottom: 5px;
+  }
 }
-}
-
-

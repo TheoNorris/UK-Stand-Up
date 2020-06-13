@@ -1,5 +1,30 @@
+document.getElementById("socials").style.visibility = "hidden";
+
 /*Function sending API information from Happi.dev to HTML*/
 function artistInformationHTML(id_artist) {
+document.getElementById("socials").style.visibility = "visible";
+
+  var socialLinks = {
+    "facebook": id_artist.result.facebook,
+    "instagram": id_artist.result.instagram,
+    "spotify": id_artist.result.spotify,
+    "youtube": id_artist.result.youtube,
+  }
+
+  for(const prop in socialLinks) {
+
+    var socialNames = ["facebook", "instagram", "spotify", "youtube"]
+
+    for (i = 0; i < socialNames.length; i++) {
+    
+        if (socialLinks[prop] != "") {
+     
+        $(".social-media-container").html(`<a id="${socialNames[i]}" class="social-links" href="https://www.${socialNames[i]}.com/${socialLinks[prop]}" target="_blank"><i class="fab fa-${socialNames[i]}-square"></i></a>`);
+        console.log(socialLinks[prop])
+        }
+        }
+}
+
   return (
     $("#artist-name").html(id_artist.result.artist),
     $("#artist-social").html(id_artist.result.artist + "´s Socials"),
@@ -12,27 +37,8 @@ function artistInformationHTML(id_artist) {
       background: `url(${id_artist.result.cover}) no-repeat center center`,
       zoom: "90%",
       "min-height": "300px",
-    }),
-    $("#facebook").attr(
-      "href",
-      "https://www.facebook.com/" + id_artist.result.facebook
-    ),
-    $("#instagram").attr(
-      "href",
-      "https://www.instagram.com/" + id_artist.result.instagram
-    ),
-    $("#spotify").attr(
-      "href",
-      "https://open.spotify.com/search/" + id_artist.result.artist
-    ),
-    $("#twitter").attr(
-      "href",
-      "https://www.twitter.com/" + id_artist.result.twitter
-    ),
-    $("#youtube").attr(
-      "href",
-      "https://open.youtube.com/search/" + id_artist.result.youtube
-    )
+    })
+    
   );
 }
 
@@ -52,15 +58,16 @@ $("p#artist-description-p").children().attr("target", "_blank");
 
 //A function retrieving album cover through a for loop and placing in the html with a nested loop
 function artistAlbumHTML(id_artist) {
-  artistAlbums = id_artist.result.albums;
-
+  var artistAlbums = id_artist.result.albums;
+  var i = 0;
   for (i = 0; i < artistAlbums.length && i < 5; i++) {
     var artistCoverString = artistAlbums[i].cover;
     var albumLinks = artistAlbums[i].album.split();
     var artistCovers = artistCoverString.split(" ");
 
     var individualAlbumArt;
-
+    var j = 0;
+    var h = 0;
     for (
       j = 0, h = 0;
       j < artistCovers.length, h < albumLinks.length;
@@ -69,9 +76,11 @@ function artistAlbumHTML(id_artist) {
       individualAlbumArt += `<a class="album-links" href="https://open.spotify.com/search/${id_artist.result.artist} ${albumLinks[h]}" target="_blank"><img class="album-img" src="${artistCovers[j]}" class="album-img"></a>`;
 
       var albumArtToImg = individualAlbumArt.replace("undefined", "");
+
+       document.getElementById("album-images").innerHTML = albumArtToImg;
     }
 
-    document.getElementById("album-images").innerHTML = albumArtToImg;
+   
   }
 }
 
