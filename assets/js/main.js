@@ -7,13 +7,14 @@ document.getElementById("socials").style.visibility = "visible";
   var socialLinks = {
     "facebook": id_artist.result.facebook,
     "instagram": id_artist.result.instagram,
-    "spotify": id_artist.result.spotify,
+    "twitter": id_artist.result.twitter,
     "youtube": id_artist.result.youtube,
   }
+console.log(socialLinks)
 
   for(const prop in socialLinks) {
 
-    var socialNames = ["facebook", "instagram", "spotify", "youtube"]
+    var socialNames = ["facebook", "instagram", "twitter", "youtube"];
 
     for (i = 0; i < socialNames.length; i++) {
     
@@ -22,8 +23,10 @@ document.getElementById("socials").style.visibility = "visible";
         $(".social-media-container").html(`<a id="${socialNames[i]}" class="social-links" href="https://www.${socialNames[i]}.com/${socialLinks[prop]}" target="_blank"><i class="fab fa-${socialNames[i]}-square"></i></a>`);
         console.log(socialLinks[prop])
         }
-        }
+    }
 }
+        
+    
 
   return (
     $("#artist-name").html(id_artist.result.artist),
@@ -56,8 +59,10 @@ function artistDescriptionHTML(artist) {
 //JQuery ensuring link in artist description is opened in seperate tab
 $("p#artist-description-p").children().attr("target", "_blank");
 
+document.getElementById("album-images-container").style.visibility = "hidden";
 //A function retrieving album cover through a for loop and placing in the html with a nested loop
 function artistAlbumHTML(id_artist) {
+  document.getElementById("album-images-container").style.visibility = "visible";
   var artistAlbums = id_artist.result.albums;
   var i = 0;
   for (i = 0; i < artistAlbums.length && i < 5; i++) {

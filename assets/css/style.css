@@ -57,7 +57,7 @@ p {
 
 .artist-bio-div {
   border: solid 1px #585858;
-  padding: 20px 15px;
+  padding: 20px 15px 0;
   text-align: center;
 }
 
@@ -94,6 +94,7 @@ p {
 
 #album-images-container {
   margin-top: 30px;
+  margin-bottom: 30px;
   border: solid 0.5px #3f83ff;
   padding-bottom: 28px;
 }
