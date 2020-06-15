@@ -1,45 +1,39 @@
-![UK STAND UP](/assets/readme-documents/UK-STAND-UP-HEAD.png)
+![UK STAND UP](/assets/readme-documents/uk-stand-up-head.png)
 
 This project is a website celebrating UK rap artists. Through API technologies you will be able to view different artists biographies, social links, 
 view a small discography with links to the artists music and see the social media the artist has. There will also be a main image of the artist.
-The website has only one page but this will completely change depending on the artist due to the information received from the API's.
-
-I am creating this project in order to showcase Josh Leedam's Photography. I will be using HTML and CSS to create a website 
-containing five pages. A home page, a page of the photographers work, a thubnail page, a page containing a brief history of the photographer
-and a contact page.
+The website is a one page site but this will completely change depending on the artist due to the information received from the API's.
 
  ## UX
 
- This website will be created to promote Josh Leedam's photography to potential fans, customers and employers.
- The site users will be supporters of his work, enthusiasts of photography/wildlife/nature and customers/employers.
- The website will be a simple, sleek and beautiful website with easy to navigate links, showcasing some of the photographers 
- most stunning work.
-
- ![Josh Leedam Homepage](/assets/readme-documents/josh-leedam-home.png)
+ This website will be created for enthusiasts of UK rap. The site users will be supporters of individual artists, the genre as a whole,
+ and even possible other music fans interested in expanding their knowledge of music. The website will be a simple, stylish website. It will be easy to navigate
+ through, showcasing some of the U.K's best rappers.
 
  * As a user I can see what the main focus of the website is.
- * As a user I can navigate myself to any social media the photographer has.
- * As a user I can navigate myself through the additional pages efficiently and effectively.
- * As a user I can view the photograpers work.
- * As a user I can fill out a form registering for newsletters.
- * As a user I can contact the photographer in regards to purchasing work or offering contracts.
-
-My wireframes were made using Balsamic Wireframes. You can view them [here](assets/readme-documents/milestone-project-one-wireframes.pdf).
+ * As a user I can read a brief history of UK rap.
+ * As a user I will be able to search different artists.
+ * As a user I can read a biography on each artist.
+ * As a user I can see a photo of the artist.
+ * As a user I can see a small discography of the artist with spotify links to the artists music.
+ * As a user I can navigate myself to any social media the artist has.
+ 
+My wireframes were made using Balsamic Wireframes. You can view them [here](assets/readme-documents/uk-wireframes.pdf).
 
 ## Existing Features
 
- * A navigation bar allowing users to scroll through the various pages.
- * Social links opening the associated web pages in a new window.
- * A photo page featuring a carousel to showcase the photographers work using a bootstrap feature with javascript.
- * A thumbnail page featuring thumbnails that when clicked on exhibit a full-size photo in a seperate tab.
- * A newsletter form to fill out, so the user can receive monthly newsletters.
- * A contact form for the user to fill out to contact the photographer for projects or any type of interest.
+ * A select bar to select your favourite artists
+ * A biography of each chosen artist.
+ * Thumbnails of the artists discography with links taking you to that particular song or album on spotify using happi and last.fm API's.
+ * Social links for each individual artist opening the associated web pages in a new window using happi and last.fm API's.
+ * A biography and photo of each chosen artist using happi and last.fm API's.
 
  ### Features left to implement
 
- * A functioning facebook link (The photographer doesn't have facebook.)
- * functioning contact and newsletter form.
- * A page exhibiting work for sale.
+In the future I would like to use an API that also uses back-end development such as Spotify. This way I could also implement some form.
+of music player. I could also implement a top tracks playlist for the artists.
+I would also like to implement a section for tour dates. I looked at two seperate API's for this. You had to apply for keys which I am still waiting for.
+I also looked at the Ticket Master API but the artists were not well known  enough to have their tour dates on this API.
  
 ## technologies used
 
@@ -72,49 +66,32 @@ An open source toolkit for developing with HTML, CSS, and JS.
 
 A toolkit for icons.
 
+* [API technologies](https://en.wikipedia.org/wiki/Application_programming_interface)
+
+An application programming interface (API) is a computing interface which defines interactions between multiple software intermediaries.
+
 ## Testing
 
-Having written my code for each .html page I have validated them on [The W3C Markup validation service](https://validator.w3.org/).
+Having written my code for my .html page I have validated it on [The W3C Markup validation service](https://validator.w3.org/).
 The same applies to my css which I have validated on [Jigsaw](https://jigsaw.w3.org/css-validator/).
 
-1. Navbar
-* Going through each of the pages, I clicked on each navigation bar link to ensure all pages worked individually.
 
-2. Social Media links
-- I went to the social media links on each of the pages and clicked on them to ensure they opened up in new tabs using 'target="_blank"'.
-
-3. Newsletter form
-- On each page  I checked the newsletter form was responsive and each input required text. I then repeated the process with each box until the form was filled.
-
-4. Photopage carousel
-- On the photo page I checked if the carousel was responsive in all media sizes by scrolling through it on each media platform.
-
-5. Portfolio thumbnail link
-- I navigated to the portfolio page. clicked on the thumbnail page link. ensured the page opened in the same window correctly.
-
-6. Thumbnail page
-- Went through each individual thumbnail and clicked on them to ensure they were all opened in their individual tabs.
-
-7. Contact form
-- I checked the contact form was responsive and each input required text. I completed this by trying to submit the form without any text. I then repeated the process with each box until the form was filled.
 
 This website was tested across multiple browsers (Chrome, Safari, Firefox and Microsoft edge.) It is also responsive, having
 tested it on chrome developer tools across ipad, various iphones, samsungs etc. I have also tested it on iphone x, iphone 7, macbook
 and desktop.
-On smaller resolution screens I have extracted some features from the contact page. I have taken away the newsletter form and image on mobile devices.
-This is in order to keep the page clean, fresh and minimalistic.
 
 ## Deployment
 
 This site is hosted by GitHub pages deployed directly from the master branch. To deploy the website you must first go to your repository on 
 GitHub pages. You then click on settings, scroll down to GitHub pages. Select 'master branch' in source, then after a couple of minutes your website
-will be deployed. You can then follow the link given in the GitHub pages section (https://theonorris.github.io/Josh-Leedam-Photography/)
+will be deployed. You can then follow the link given in the GitHub pages section (https://theonorris.github.io/UK-Stand-Up/)
 
-![GitHub pages example](/assets/readme-documents/github-pages-screenshot.png)
+![GitHub pages example](/assets/readme-documents/github-pages-example.png)
 
-To run locally you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/TheoNorris/Josh-Leedam-Photography.git` into your terminal.
+To run locally you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/TheoNorris/UK-Stand-Up.git` into your terminal.
 
-![git clone](/assets/readme-documents/git-clone.png)
+![git clone](/assets/readme-documents/gitclone.png)
 
 To cut ties with this GitHub repository, type `git remote rm origin`into the terminal.
 
@@ -122,22 +99,11 @@ To cut ties with this GitHub repository, type `git remote rm origin`into the ter
 
 ## Credits
 
-### content
+### content and media
 
-All content in the about me section of this site was written by me.
-
-### Media 
-
-All Photos were given to me by [Josh Leedam](https://www.instagram.com/josh_leedam_photos/).
+Most of the Rap history was taken from [wikipedia] (https://en.wikipedia.org/wiki/British_hip_hop#:~:text=The%20first%20UK%20record%20label,acts%20was%20founded%20in%201986.&text=Music%20of%20Life%20was%20swiftly,through%20in%20his%20vocal%20style.).
+The artists bio's are taken from the [last.fm API](https://www.last.fm/api/). While the artists photos, album covers, names and social links are taken from the [happi API](https://happi.dev/docs/music).
 
 ### Acknowledgements
-
-The photo carousel was adapted from [Bootstrap](https://getbootstrap.com/docs/4.0/components/carousel/).
-
-The thumbnails layout was adapted from [w3schools](https://www.w3schools.com/howto/howto_css_thumbnail.asp).
-
-The contact form was adapted from [w3schools](https://www.w3schools.com/howto/howto_css_responsive_form.asp).
-
-The index page background image was set up using [w3schools](https://css-tricks.com/perfect-full-page-background-image/).
 
 A thank you to Cormac, my tutor and Precious, my mentor for their continual help throughout the project.
