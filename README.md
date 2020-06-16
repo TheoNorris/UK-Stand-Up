@@ -1,6 +1,6 @@
 ![UK STAND UP](/assets/readme-documents/uk-stand-up-head.png)
 
-This project is a website celebrating UK rap artists. Through API technologies you will be able to view different artists biographies, social links, 
+UK STAND UP is a project celebrating UK rap artists. Through API technologies you will be able to view different artists biographies, social links, 
 view a small discography with links to the artists music and see the social media the artist has. There will also be a main image of the artist.
 The website is a one page site but this will completely change depending on the artist due to the information received from the API's.
 
@@ -30,10 +30,10 @@ My wireframes were made using Balsamic Wireframes. You can view them [here](asse
 
  ### Features left to implement
 
-In the future I would like to use an API that also uses back-end development such as Spotify. This way I could also implement some form.
+In the future I would like to use an API that also uses back-end development such as Spotify. This way I could also implement some form
 of music player. I could also implement a top tracks playlist for the artists.
 I would also like to implement a section for tour dates. I looked at two seperate API's for this. You had to apply for keys which I am still waiting for.
-I also looked at the Ticket Master API but the artists were not well known  enough to have their tour dates on this API.
+I also looked at the Ticket Master API but the artists were not well known enough to have their tour dates on this API.
  
 ## technologies used
 
@@ -70,12 +70,24 @@ A toolkit for icons.
 
 An application programming interface (API) is a computing interface which defines interactions between multiple software intermediaries.
 
+## Problems Encountered
+
+During the project I encountered some small problems. The first problem I was having was how to put multiple elements into a div using a for loop. I solved this by plaving the
+elements into a variable first but this output some text saying undefined at the beginning of the variables. I removed this text with another variable then placed the variable into the div.
+Another problem I encountered was while viewing my website on my mobile, the description texts of the artists weren't so clear. I hadn't experienced this problem in chrome developer tools.
+It must be something involving resolution so I adjusted the font weight. I also witnessed some problems with image scalability when recieving artist images from the API's which I found relatively
+difficult to adjust. I overcame the problem with zoom and media queries. I acknowledge that the artist Kojey Radical's twitter link is not correct. I believe the API has the incorrect information.
+
 ## Testing
+
+I have tested the site manually ensuring all artists have the correct photos, bios, album covers and social links.
+I have been through each artist and checked if each album link goes to the correct album on spotify by clicking upon each link,
+I have checked that each social media link goes to the correct artists social media account.
+I have also gone to each link and ensured that they all open in their individual windows.
 
 Having written my code for my .html page I have validated it on [The W3C Markup validation service](https://validator.w3.org/).
 The same applies to my css which I have validated on [Jigsaw](https://jigsaw.w3.org/css-validator/).
-
-
+My Javascripthas been tested using [JSHint](https://jshint.com/)
 
 This website was tested across multiple browsers (Chrome, Safari, Firefox and Microsoft edge.) It is also responsive, having
 tested it on chrome developer tools across ipad, various iphones, samsungs etc. I have also tested it on iphone x, iphone 7, macbook
@@ -101,9 +113,10 @@ To cut ties with this GitHub repository, type `git remote rm origin`into the ter
 
 ### content and media
 
-Most of the Rap history was taken from [wikipedia] (https://en.wikipedia.org/wiki/British_hip_hop#:~:text=The%20first%20UK%20record%20label,acts%20was%20founded%20in%201986.&text=Music%20of%20Life%20was%20swiftly,through%20in%20his%20vocal%20style.).
+Most of the Rap history was taken from [wikipedia](https://en.wikipedia.org/wiki/British_hip_hop#:~:text=The%20first%20UK%20record%20label,acts%20was%20founded%20in%201986.&text=Music%20of%20Life%20was%20swiftly,through%20in%20his%20vocal%20style.),
+besides small parts being written by me.
 The artists bio's are taken from the [last.fm API](https://www.last.fm/api/). While the artists photos, album covers, names and social links are taken from the [happi API](https://happi.dev/docs/music).
 
 ### Acknowledgements
 
-A thank you to Cormac, my tutor and Precious, my mentor for their continual help throughout the project.
+A thank you to [Cormac](https://github.com/armedcor), my tutor and [Precious](https://github.com/precious-ijege), my mentor for their continual help throughout the project.

@@ -1,130 +1,82 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-  <!--Meta Tags-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>UK Stand Up</title>
+    <head>
+        <!--Meta Tags-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>UK Stand Up</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    </head>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-  <!--Header-->
-    <header>
-      <a href="index.html" class="home-header"
-        ><h1 class="page-heading">UK STAND UP</h1></a
-      >
-      <p class="heading-paragraph">Your favourite UK rappers under one roof</p>
-      <hr id="heading-divider" />
-    </header>
-    <!--Artist Bio-->
-    <div class="container-fluid">
-      <div class="row artist-image-bio-container">
-        <div class="col-lg-6 artist-bio-div">
-          <div class="col-lg-12">
-            <div id="artist-description">
-              <h2 id="artist-name">UK Rap</h2>
-              <p id="artist-description-p">
-                UK STAND UP is a space dedicated to celebrating UK Rap artists
-                from around the country. UK RAP is a genre of music, and a
-                culture that covers a variety of styles of hip hop music made in
-                the United Kingdom. British hip hop was originally influenced by
-                the dub/toasting introduced to the United Kingdom by Jamaican
-                migrants in the 1950s–70s, who eventually developed uniquely
-                influenced rapping (or speed-toasting) in order to match the
-                rhythm of the ever-increasing pace and aggression of
-                Jamaican-influenced dub in the UK. Toasting and soundsystem
-                culture was also influential in genres outside of hip hop that
-                still included rapping. such as grime, jungle, and UK garage. A
-                new generation of artists emerged following the turn of the
-                century, including Jehst, Skinnyman, Nicky Spesh, Foreign
-                Beggars and Usmaan. At the same time, a new style of electronic
-                music emerged in the early 2000s, derivative of UK Garage and
-                jungle, with influences from Dancehall, Drum and bass and hip
-                hop. The new genre was dubbed grime (sometimes called eskibeat
-                or sublow) and effectively superseded UK hip hop in both
-                popularity and the mainstream conscious. Notable grime acts
-                include Dizzee Rascal, Wiley, Kano, Lethal Bizzle, Tinchy
-                Stryder, Skepta, Jme, Jammer, Shystie, Ghetts and Devlin. Grime
-                is generally considered to be distinct from hip-hop due to its
-                roots primarily being genres such as UK garage and jungle. On
-                this website, you will find biographies, social media links,
-                album art and album links to some of the UK's greatest rappers.
-              </p>
-              <!--Artist Selector-->
-              <select name="Artist" id="artists-selector" onchange="getArtist()">
-                <option
-                  id="select-artist"
-                  value="Select Artist"
-                  selected
-                  disabled
-                  hidden
-                  >Select Artist</option
-                >
-                <option value="AJ Tracey">AJ Tracey</option>
-                <option value="Dream Mclean">Dream Mclean</option>
-                <option value="Kojey Radical">Kojey Radical</option>
-                <option value="Klashnekoff">Klashnekoff</option>
-                <option value="Bonkaz">Bonkaz</option>
-              </select>
+    <body>
+        <!--Header-->
+        <header>
+            <a href="index.html" class="home-header"><h1 class="page-heading">UK STAND UP</h1></a>
+            <p class="heading-paragraph">Your favourite UK rappers under one roof</p>
+            <hr id="heading-divider" />
+        </header>
+        <!--Artist Bio-->
+        <div class="container-fluid">
+            <div class="row artist-image-bio-container">
+                <div class="col-lg-6 artist-bio-div">
+                    <div class="col-lg-12">
+                        <div id="artist-description">
+                            <h2 id="artist-name">UK Rap</h2>
+                            <p id="artist-description-p">
+                                UK STAND UP is a space dedicated to celebrating UK Rap artists from around the country. UK RAP is a genre of music, and a culture that covers a variety of styles of hip hop music made in the United Kingdom.
+                                British hip hop was originally influenced by the dub/toasting introduced to the United Kingdom by Jamaican migrants in the 1950s–70s, who eventually developed uniquely influenced rapping (or speed-toasting)
+                                in order to match the rhythm of the ever-increasing pace and aggression of Jamaican-influenced dub in the UK. Toasting and soundsystem culture was also influential in genres outside of hip hop that still
+                                included rapping. such as grime, jungle, and UK garage. A new generation of artists emerged following the turn of the century, including Jehst, Skinnyman, Nicky Spesh, Foreign Beggars and Usmaan. At the same
+                                time, a new style of electronic music emerged in the early 2000s, derivative of UK Garage and jungle, with influences from Dancehall, Drum and bass and hip hop. The new genre was dubbed grime (sometimes
+                                called eskibeat or sublow) and effectively superseded UK hip hop in both popularity and the mainstream conscious. Notable grime acts include Dizzee Rascal, Wiley, Kano, Lethal Bizzle, Tinchy Stryder, Skepta,
+                                Jme, Jammer, Shystie, Ghetts and Devlin. Grime is generally considered to be distinct from hip-hop due to its roots primarily being genres such as UK garage and jungle. On this website, you will find
+                                biographies, social media links, album art and album links to some of the UK's greatest rappers.
+                            </p>
+                            <!--Artist Selector-->
+                            <select name="Artist" id="artists-selector" onchange="getArtist()">
+                                <option id="select-artist" value="Select Artist" selected disabled hidden>Select Artist</option>
+                                <option value="AJ Tracey">AJ Tracey</option>
+                                <option value="Dream Mclean">Dream Mclean</option>
+                                <option value="Kojey Radical">Kojey Radical</option>
+                                <option value="Klashnekoff">Klashnekoff</option>
+                                <option value="Bonkaz">Bonkaz</option>
+                            </select>
+                        </div>
+                        <!--Album Links-->
+                        <div id="album-images-container">
+                            <div id="album-images"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-lg-12 artist-image-container">
+                        <div id="artist-image-div"></div>
+                        <div id="mobile-artist-image-div"></div>
+                    </div>
+                </div>
             </div>
-            <!--Album Links-->
-            <div id="album-images-container">
-              <div id="album-images"></div>
+        </div>
+        <!--Social Links-->
+        <div id="socials" class="container social-div">
+            <h2 id="artist-social"></h2>
+            <div class="social-media-container"></div>
+        </div>
+        <footer>
+            <div id="footer">
+                <p>
+                    © UK STAND UP. All rights reserved. Website designed by
+                    <a target="_blank" class="theo-tag" href="https://github.com/TheoNorris">Theo Norris</a>
+                </p>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="col-lg-12 artist-image-container">
-            <div id="artist-image-div"></div>
-            <div id="mobile-artist-image-div"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Social Links-->
-    <div id="socials" class="container social-div">
-        <h2 id="artist-social"></h2>
-        <div class="social-media-container">
-        
-        </div>
-      </div>
-    <footer>
-    <div id="footer">
-    <p>© UK STAND UP. All rights reserved. Website designed by <a target="_blank" class="theo-tag" href="https://github.com/TheoNorris">Theo Norris</a></p>
-    </div>
-    </footer>
-    <!--JQuery and javascript scripts-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+        </footer>
+        <!--JQuery and javascript scripts-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
