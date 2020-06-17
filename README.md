@@ -1,4 +1,4 @@
-![UK STAND UP](/assets/readme-documents/uk-stand-up-head.png)
+![UK STAND UP](/readme-documents/uk-stand-up-head.png)
 
 UK STAND UP is a project celebrating UK rap artists. Through API technologies you will be able to view different artists biographies, social links, 
 view a small discography with links to the artists music and see the social media the artist has. There will also be a main image of the artist.
@@ -18,7 +18,7 @@ The website is a one page site but this will completely change depending on the 
  * As a user I can see a small discography of the artist with spotify links to the artists music.
  * As a user I can navigate myself to any social media the artist has.
  
-My wireframes were made using Balsamic Wireframes. You can view them [here](assets/readme-documents/uk-wireframes.pdf).
+My wireframes were made using [Balsamic Wireframes](https://balsamiq.com/?gclid=CjwKCAjw_qb3BRAVEiwAvwq6VoxJmpo6YvKPm4Qr_cVEjXzA8ve5qDOPE7VZbqIWtsFXiAf3okxfpxoCWF0QAvD_BwE). You can view them [here](/readme-documents/uk-wireframes.pdf).
 
 ## Existing Features
 
@@ -30,9 +30,13 @@ My wireframes were made using Balsamic Wireframes. You can view them [here](asse
 
  ### Features left to implement
 
-In the future I would like to use an API that also uses back-end development such as Spotify. This way I could also implement some form
-of music player. I could also implement a top tracks playlist for the artists.
-I would also like to implement a section for tour dates. I looked at two seperate API's for this. You had to apply for keys which I am still waiting for.
+* In the future I would like to use an API that also uses back-end development such as Spotify. This way I could also implement some form of music player. 
+I could also implement a top tracks playlist for the artists.
+
+* I would also like to implement a larger artists search bar. The Happi API I am using requires an artist ID number instead of name. If I was able to use the spotify API it would be possible to search the artist by name. 
+Also if I had more time, I could have added more javascript in order to search the artist's ID numbers. This is something I will implement in the future.
+
+* I would also like to implement a section for tour dates. I looked at two seperate API's for this. I had to apply for keys which I am still waiting for. 
 I also looked at the Ticket Master API but the artists were not well known enough to have their tour dates on this API.
  
 ## technologies used
@@ -70,28 +74,51 @@ A toolkit for icons.
 
 An application programming interface (API) is a computing interface which defines interactions between multiple software intermediaries.
 
-## Problems Encountered
-
-During the project I encountered some small problems. The first problem I was having was how to put multiple elements into a div using a for loop. I solved this by plaving the
-elements into a variable first but this output some text saying undefined at the beginning of the variables. I removed this text with another variable then placed the variable into the div.
-Another problem I encountered was while viewing my website on my mobile, the description texts of the artists weren't so clear. I hadn't experienced this problem in chrome developer tools.
-It must be something involving resolution so I adjusted the font weight. I also witnessed some problems with image scalability when recieving artist images from the API's which I found relatively
-difficult to adjust. I overcame the problem with zoom and media queries. I acknowledge that the artist Kojey Radical's twitter link is not correct. I believe the API has the incorrect information.
-
 ## Testing
 
-I have tested the site manually ensuring all artists have the correct photos, bios, album covers and social links.
-I have been through each artist and checked if each album link goes to the correct album on spotify by clicking upon each link,
-I have checked that each social media link goes to the correct artists social media account.
-I have also gone to each link and ensured that they all open in their individual windows.
+* Having written my code for my .html page I have validated it on [The W3C Markup validation service](https://validator.w3.org/). 
 
-Having written my code for my .html page I have validated it on [The W3C Markup validation service](https://validator.w3.org/).
-The same applies to my css which I have validated on [Jigsaw](https://jigsaw.w3.org/css-validator/).
-My Javascripthas been tested using [JSHint](https://jshint.com/)
+I acknowledge that there is a warning for an empty H2 element. This is filled when the API is activated.
 
-This website was tested across multiple browsers (Chrome, Safari, Firefox and Microsoft edge.) It is also responsive, having
-tested it on chrome developer tools across ipad, various iphones, samsungs etc. I have also tested it on iphone x, iphone 7, macbook
-and desktop.
+* I have validated my css on [Jigsaw](https://jigsaw.w3.org/css-validator/). 
+
+* My Javascript has been tested using [JSHint](https://jshint.com/).
+
+This website was tested across multiple browsers (Chrome, Safari, Firefox and Microsoft edge.) It is also responsive, 
+having tested it on chrome developer tools across ipad, various iphones, samsungs etc. I have also tested it on iphone x, iphone 7, macbook and desktop.
+
+### User stories Testing
+
+* As a user I will be able to search different artists.
+
+I have been through each individual artist and checked that there is the correct bio, 
+photo, albums and social links and these are responsive on all platforms.
+
+* As a user I can see a small discography of the artist with spotify links to the artists music.
+
+I have checked if each album link goes to the correct album on spotify by clicking upon each link.
+
+* As a user I can navigate myself to any social media the artist has.
+
+I have checked that each social media link goes to the correct artists social media account by clicking on each of the links.
+ I acknowledge that the artist Kojey Radical's twitter link is not correct. I believe the API has the incorrect information.
+
+### Problems Encountered
+
+During the project I encountered some small problems,
+
+* The first problem I had was how to put multiple album covers and album links into a div using a for loop.
+ I solved this by placing the elements into a variable first, but the next problem was that the new variable output some text stating undefined at the beginning of the variables. 
+ I removed this text with another variable then placed the variable into the div.
+
+* Another problem I encountered was while viewing my website on my mobile, the description texts of the artists weren't so clear.
+ I hadn't experienced this problem in chrome developer tools. It must be something involving screen resolution so I adjusted the font weight.
+
+* I also witnessed some problems with image scalability when recieving artist images from the API's which I found relatively difficult to adjust. 
+I overcame the problem with zoom and media queries.
+
+* On the iphone 5/SE on developer tools I discovered that my texts for one artist was overflowing it's div. 
+I adjusted the font sizes in media queries for this sized screen.
 
 ## Deployment
 
@@ -99,22 +126,28 @@ This site is hosted by GitHub pages deployed directly from the master branch. To
 GitHub pages. You then click on settings, scroll down to GitHub pages. Select 'master branch' in source, then after a couple of minutes your website
 will be deployed. You can then follow the link given in the GitHub pages section (https://theonorris.github.io/UK-Stand-Up/)
 
-![GitHub pages example](/assets/readme-documents/github-pages-example.png)
+![GitHub pages example](/readme-documents/github-pages-example.png)
 
-To run locally you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/TheoNorris/UK-Stand-Up.git` into your terminal.
+**To run locally you can clone this repository directly into the editor of your choice by firstly,**
 
-![git clone](/assets/readme-documents/gitclone.png)
+* copying the link from clone or download on my GitHub page.
 
-To cut ties with this GitHub repository, type `git remote rm origin`into the terminal.
+![git copy](/readme-documents/gitclone-example.png)
 
-![git remove](/assets/readme-documents/git-remove.png)
+* then, pasting git clone https://github.com/TheoNorris/UK-Stand-Up.git into your terminal.
+
+![git clone](/readme-documents/gitclone.png)
+
+* To cut ties with this GitHub repository, type `git remote rm origin`into the terminal.
+
+![git remove](/readme-documents/git-remove.png)
 
 ## Credits
 
 ### content and media
 
 Most of the Rap history was taken from [wikipedia](https://en.wikipedia.org/wiki/British_hip_hop#:~:text=The%20first%20UK%20record%20label,acts%20was%20founded%20in%201986.&text=Music%20of%20Life%20was%20swiftly,through%20in%20his%20vocal%20style.),
-besides small parts being written by me.
+besides small parts being written by me. The Photo of London on the main page is by [Pierre Blaché](https://www.instagram.com/pierre9x6/[) taken from [pexels](https://www.pexels.com/).
 The artists bio's are taken from the [last.fm API](https://www.last.fm/api/). While the artists photos, album covers, names and social links are taken from the [happi API](https://happi.dev/docs/music).
 
 ### Acknowledgements
