@@ -13,12 +13,15 @@ The website is a one page site but this will completely change depending on the 
  * As a user I can see what the main focus of the website is.
  * As a user I can read a brief history of UK rap.
  * As a user I will be able to search different artists.
+ ![Select Bar](/readme-documents/select-bar.png)
  * As a user I can read a biography on each artist.
  * As a user I can see a photo of the artist.
  * As a user I can see a small discography of the artist with spotify links to the artists music.
+ ![Album Covers](/readme-documents/album-covers.png)
  * As a user I can navigate myself to any social media the artist has.
+ ![Socials](/readme-documents/socials.png)
  
-My wireframes were made using [Balsamic Wireframes](https://balsamiq.com/?gclid=CjwKCAjw_qb3BRAVEiwAvwq6VoxJmpo6YvKPm4Qr_cVEjXzA8ve5qDOPE7VZbqIWtsFXiAf3okxfpxoCWF0QAvD_BwE). You can view them [here](/readme-documents/uk-wireframes.pdf).
+My wireframes were made using [Balsamic Wireframes](https://balsamiq.com/?gclid=CjwKCAjw_qb3BRAVEiwAvwq6VoxJmpo6YvKPm4Qr_cVEjXzA8ve5qDOPE7VZbqIWtsFXiAf3okxfpxoCWF0QAvD_BwE). You can view them [here](/wireframes/uk-wireframes.pdf).
 
 ## Existing Features
 
@@ -147,7 +150,7 @@ will be deployed. You can then follow the link given in the GitHub pages section
 ### content and media
 
 Most of the Rap history was taken from [wikipedia](https://en.wikipedia.org/wiki/British_hip_hop#:~:text=The%20first%20UK%20record%20label,acts%20was%20founded%20in%201986.&text=Music%20of%20Life%20was%20swiftly,through%20in%20his%20vocal%20style.),
-besides small parts being written by me. The Photo of London on the main page is by [Pierre Blaché](https://www.instagram.com/pierre9x6/[) taken from [pexels](https://www.pexels.com/).
+besides small parts being written by me. The Photo of London on the main page is by [Pierre Blaché](https://www.instagram.com/pierre9x6/) taken from [pexels](https://www.pexels.com/).
 The artists bio's are taken from the [last.fm API](https://www.last.fm/api/). While the artists photos, album covers, names and social links are taken from the [happi API](https://happi.dev/docs/music).
 
 ### Acknowledgements

@@ -215,26 +215,32 @@ i:hover {
     #mobile-artist-image-div {
         visibility: visible;
     }
+
     .artist-image-container {
         min-height: 400px;
     }
+
     #mobile-artist-image-div {
         margin: 20px auto;
         left: 0;
     }
+
     #heading-divider {
         margin-bottom: 20px;
     }
+
     #artist-description-p {
         font-size: 18px;
         font-weight: 300;
     }
+
     #footer {
         font-size: 1%;
         margin-bottom: 5px;
     }
+
     #artist-name {
-        margin: 15px auto;
+        margin: 10px auto;
     }
 }
 
@@ -243,9 +249,11 @@ i:hover {
         font-size: 30px;
         margin: 0 auto 10px;
     }
+
     #artist-description-p {
         font-size: 14px;
     }
+    
     #artist-social {
         font-size: 30px;
     }
