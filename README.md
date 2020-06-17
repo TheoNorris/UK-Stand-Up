@@ -13,12 +13,17 @@ The website is a one page site but this will completely change depending on the 
  * As a user I can see what the main focus of the website is.
  * As a user I can read a brief history of UK rap.
  * As a user I will be able to search different artists.
+
  ![Select Bar](/readme-documents/select-bar.png)
+
  * As a user I can read a biography on each artist.
  * As a user I can see a photo of the artist.
  * As a user I can see a small discography of the artist with spotify links to the artists music.
+
  ![Album Covers](/readme-documents/album-covers.png)
+
  * As a user I can navigate myself to any social media the artist has.
+ 
  ![Socials](/readme-documents/socials.png)
  
 My wireframes were made using [Balsamic Wireframes](https://balsamiq.com/?gclid=CjwKCAjw_qb3BRAVEiwAvwq6VoxJmpo6YvKPm4Qr_cVEjXzA8ve5qDOPE7VZbqIWtsFXiAf3okxfpxoCWF0QAvD_BwE). You can view them [here](/wireframes/uk-wireframes.pdf).
