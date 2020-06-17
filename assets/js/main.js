@@ -1,7 +1,9 @@
+/*Javascript hiding the social media div*/
 document.getElementById("socials").style.visibility = "hidden";
 
 /*Function sending API information from Happi.dev to HTML*/
 function artistInformationHTML(id_artist) {
+    
     document.getElementById("socials").style.visibility = "visible";
 
     var socialLinks = [id_artist.result.facebook, id_artist.result.instagram, id_artist.result.twitter, id_artist.result.youtube];
@@ -16,7 +18,7 @@ function artistInformationHTML(id_artist) {
             $(".social-media-container").html(socialMediaToDiv);
         }
     }
-
+    /*JQuery assigning API information to elements in HTML*/
     return (
         $("#artist-name").html(id_artist.result.artist),
         $("#artist-social").html(id_artist.result.artist + "´s Socials"),
@@ -41,6 +43,7 @@ function artistDescriptionHTML(artist) {
 //JQuery ensuring link in artist description is opened in seperate tab
 $("p#artist-description-p").children().attr("target", "_blank");
 
+/*Javascript hiding album div*/
 document.getElementById("album-images-container").style.visibility = "hidden";
 //A function retrieving album cover through a for loop and placing in the html with a nested loop
 function artistAlbumHTML(id_artist) {
@@ -51,7 +54,7 @@ function artistAlbumHTML(id_artist) {
         var artistCoverString = artistAlbums[i].cover;
         var albumLinks = artistAlbums[i].album.split();
         var artistCovers = artistCoverString.split(" ");
-
+        
         var individualAlbumArt;
         var j = 0;
         var h = 0;
